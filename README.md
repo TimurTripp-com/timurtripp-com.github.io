@@ -1,1 +1,0 @@
-# timurtripp-com.github.io
