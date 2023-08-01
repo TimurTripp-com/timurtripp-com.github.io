@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=0.1.1">
-		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v=0.1.1"></script>
 		<style type="text/css">
 			:root {
@@ -50,14 +50,15 @@
 					<span class="icon-bar middle-bar"></span>
 					<span class="icon-bar bottom-bar"></span>
 				</button>
-				<div class="container collapse navbar-collapse" id="navMenu">
+				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item opt opt-home">
 							<a class="nav-link" href="/">Home<div class="underbar"></div></a>
 						</li><li class="nav-item opt opt-portfolio">
 							<a class="nav-link" href="/portfolio">Portfolio<div class="underbar"></div></a>
 						</li>
-						<li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
+						<li class="nav-item"><div class="theme-mode-tooltip-container"></div>
+<button class="theme-mode-toggle-container" onclick="toggleThemeMode()" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-trigger="hover" data-bs-container=".theme-mode-tooltip-container" title="Theme">
 	<div class="theme-mode-toggle">
 		<div class="theme-mode-toggle-circle-inner">
 			<div class="theme-mode-toggle-inner-left">
@@ -67,7 +68,9 @@
 			</div>
 		</div>
 	</div>
-</button></li>
+	<span aria-hidden="false" class="align-text-top d-md-none">Theme</span>
+</button>
+</li>
 					</ul>
 				</div>
 			</div>
@@ -104,13 +107,13 @@
 
 <ul class="term-list list-unstyled">
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-institutions term-cu-boulder"><div class="my-1 position-relative icon-container"><div class="icon icon-framed"><img alt="Icon for University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div><div><h3><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-institutions term-cu-boulder"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div></div><div><h3><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-institutions term-introcs-pogil"><div class="my-1 position-relative icon-container"><div class="icon icon-framed"><img alt="Icon for IntroCS-POGIL" src="https://assets.timurtripp.com/portfolio/IntroCS%20POGIL.png"></div></div><div><h3><a class="label collection-institutions term-introcs-pogil item-underline" href="/portfolio/institutions/introcs-pogil/">IntroCS-POGIL</a></h3><div><div class="descriptor"><a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-institutions term-introcs-pogil"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="IntroCS-POGIL" src="https://assets.timurtripp.com/portfolio/IntroCS%20POGIL.png"></div></div></div><div><h3><a class="label collection-institutions term-introcs-pogil item-underline" href="/portfolio/institutions/introcs-pogil/">IntroCS-POGIL</a></h3><div><div class="descriptor"><a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-institutions term-slcc"><div class="my-1 position-relative icon-container"><div class="icon icon-framed"><img alt="Icon for Salt Lake Community College" src="https://assets.timurtripp.com/portfolio/SLCC.png"></div></div><div><h3><a class="label collection-institutions term-slcc item-underline" href="/portfolio/institutions/slcc/">Salt Lake Community College</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-taylorsville item-underline" href="/portfolio/locations/taylorsville/">Taylorsville</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-utah item-underline" href="/portfolio/locations/utah/">Utah</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-institutions term-slcc"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="Salt Lake Community College" src="https://assets.timurtripp.com/portfolio/SLCC.png"></div></div></div><div><h3><a class="label collection-institutions term-slcc item-underline" href="/portfolio/institutions/slcc/">Salt Lake Community College</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-taylorsville item-underline" href="/portfolio/locations/taylorsville/">Taylorsville</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-utah item-underline" href="/portfolio/locations/utah/">Utah</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-institutions term-westminster"><div class="my-1 position-relative icon-container"><div class="icon icon-framed"><img alt="Icon for Westminster University" src="https://assets.timurtripp.com/portfolio/Westminster.svg"></div></div><div><h3><a class="label collection-institutions term-westminster item-underline" href="/portfolio/institutions/westminster/">Westminster University</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-salt-lake-city item-underline" href="/portfolio/locations/salt-lake-city/">Salt Lake City</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-utah item-underline" href="/portfolio/locations/utah/">Utah</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-institutions term-westminster"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="Westminster University" src="https://assets.timurtripp.com/portfolio/Westminster.svg"></div></div></div><div><h3><a class="label collection-institutions term-westminster item-underline" href="/portfolio/institutions/westminster/">Westminster University</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-salt-lake-city item-underline" href="/portfolio/locations/salt-lake-city/">Salt Lake City</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-utah item-underline" href="/portfolio/locations/utah/">Utah</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
 </ul>
 

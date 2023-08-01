@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=0.1.1">
-		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v=0.1.1"></script>
 		<style type="text/css">
 			:root {
@@ -50,14 +50,15 @@
 					<span class="icon-bar middle-bar"></span>
 					<span class="icon-bar bottom-bar"></span>
 				</button>
-				<div class="container collapse navbar-collapse" id="navMenu">
+				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item opt opt-home">
 							<a class="nav-link" href="/">Home<div class="underbar"></div></a>
 						</li><li class="nav-item opt opt-portfolio">
 							<a class="nav-link" href="/portfolio">Portfolio<div class="underbar"></div></a>
 						</li>
-						<li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
+						<li class="nav-item"><div class="theme-mode-tooltip-container"></div>
+<button class="theme-mode-toggle-container" onclick="toggleThemeMode()" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-trigger="hover" data-bs-container=".theme-mode-tooltip-container" title="Theme">
 	<div class="theme-mode-toggle">
 		<div class="theme-mode-toggle-circle-inner">
 			<div class="theme-mode-toggle-inner-left">
@@ -67,7 +68,9 @@
 			</div>
 		</div>
 	</div>
-</button></li>
+	<span aria-hidden="false" class="align-text-top d-md-none">Theme</span>
+</button>
+</li>
 					</ul>
 				</div>
 			</div>
@@ -102,20 +105,20 @@
 
 
 
-<section class="hero"><h1><span class="h3"><span class="label collection-_index term-_locations">Location</span>:</span><div><div class="position-relative d-inline-block mx-auto"><div class="my-1 position-relative icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div></div></div><span class="label collection-_locations term-colorado">Colorado</span></h1><div><div class="descriptor"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-_locations term-united-states"><div class="my-1 position-relative icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div><div><h3><a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></h3><div></div></div></div></div></div></section>
+<section class="hero"><h1><span class="h3"><span class="label collection-_index term-_locations">Location</span>:</span><div><div class="position-relative d-inline-block mx-auto"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div></div></div><span class="label collection-_locations term-colorado">Colorado</span></h1><div><div class="descriptor"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-_locations term-united-states"><div class="my-2"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div></div><div><h3><a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></h3><div></div></div></div></div></div></section>
 <section class="item-relationships"><ul class="list-unstyled"></ul><ul class="list-unstyled"></ul><ul class="list-unstyled"></ul></section>
 <section class="term-relationships"><h2 id="institutions" class="jumpable-heading"><span class="jumpable-heading-text"><span class="label collection-_index term-institutions">Institution</span> – 1</span> <a class="jumpable-heading-link" href="#institutions"><span aria-hidden="true">Jump to section</span></a></h2>
 
 <ul class="term-list list-unstyled">
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-institutions term-cu-boulder"><div class="my-1 position-relative icon-container"><div class="icon icon-framed"><img alt="Icon for University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div><div><h3><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-institutions term-cu-boulder"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div></div><div><h3><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
 </ul>
 <h2 id="_locations" class="jumpable-heading"><span class="jumpable-heading-text"><span class="label collection-_index term-_locations">Location</span> – 1</span> <a class="jumpable-heading-link" href="#_locations"><span aria-hidden="true">Jump to section</span></a></h2>
 
 <ul class="term-list list-unstyled">
 	
-	<li class="section-block"><div class="my-1 content-block compact-content summary d-flex gap-2 flex-row collection-_locations term-boulder"><div class="my-1 position-relative icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div><div><h3><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
+	<li class="section-block"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-_locations term-boulder"><div class="my-2"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"></path></svg></div></div></div><div><h3><a class="label collection-_locations term-boulder item-underline" href="/portfolio/locations/boulder/">Boulder</a></h3><div><div class="descriptor d-inline"><a class="label collection-_locations term-colorado item-underline" href="/portfolio/locations/colorado/">Colorado</a></div><div class="descriptor d-inline">, <a class="label collection-_locations term-united-states item-underline" href="/portfolio/locations/united-states/">United States</a></div></div></div></div></li>
 	
 </ul>
 </section>
