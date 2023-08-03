@@ -4,32 +4,14 @@
 		<meta name="description" content="Timur Tripp is a software enginner and graduate stuent based in Denver, Colorado.">
 		<meta name="keywords" content="software engineer,web developer,personal website,portfolio,project,projects,project showcase,11ty,website,template,website template,retro,vintage,80s,1980s,90s,1990s,dark mode">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
+		<link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="#0080ff">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/5.2.3/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=0.1.1">
 		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v=0.1.1"></script>
-		<style type="text/css">
-			:root {
-				--theme-color: var(--theme-portfolio-color);
-				--theme-light-color-alt: var(--theme-light-portfolio-color-alt);
-				--theme-dark-color-alt: var(--theme-dark-portfolio-color-alt);
-				--theme-fill: var(--theme-portfolio-fill);
-				--theme-color-alt: var(--theme-light-color-alt, --theme-light-default-color-alt);
-				--theme-color-contrasty: var(--theme-color, --theme-default-color);
-			}
-			.theme-mode-dark, .theme-mode-dark * {
-				--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-			}
-			@media (prefers-color-scheme: dark) {
-				.theme-mode-auto, .theme-mode-auto * {
-					--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-					--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				}
-			}
-		</style>
 	</head>
 	<body class="portfolio theme-mode-auto">
 		
@@ -52,9 +34,9 @@
 				</button>
 				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item opt opt-home">
+						<li class="nav-item opt opt-home theme-home">
 							<a class="nav-link" href="/">Home<div class="underbar"></div></a>
-						</li><li class="nav-item opt opt-portfolio">
+						</li><li class="nav-item opt opt-portfolio theme-portfolio">
 							<a class="nav-link" href="/portfolio">Portfolio<div class="underbar"></div></a>
 						</li>
 						<li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
@@ -83,7 +65,7 @@
 </header>
 	
 	
-		<main class="content tt-main">
+		<main class="content tt-main theme-portfolio">
     
 		
 			<div class="container page-intro-outer">
@@ -104,7 +86,7 @@
 
 
 <section class="hero"><h1><span class="h3"><span class="label collection-_index term-tags">Tag</span>:</span><div><div class="position-relative d-inline-block mx-auto"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"></path></svg></div></div></div></div><span class="label collection-tags term-personal-project">Personal Project</span></h1><div></div></section>
-<section class="item-relationships"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 2</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+<section class="item-relationships"><div class="theme-brown"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 2</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--iiod.io">
@@ -113,6 +95,13 @@
 		<div class="item-header compact-content">
 			
 			<h3 class="item-name">iiod.io</h3>
+			
+			<ul class="list-unstyled item-attributes">
+			
+			<li class="item-date my-1"><span>January 2018 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> present</span></li>
+			
+			</ul>
+			
 			
 		</div>
 		<div class="item-body">
@@ -172,6 +161,13 @@
 			
 			<h3 class="item-name">[TB] Mods</h3>
 			
+			<ul class="list-unstyled item-attributes">
+			
+			<li class="item-date my-1"><span>January 2017 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> May 2018</span></li>
+			
+			</ul>
+			
+			
 		</div>
 		<div class="item-body">
 			
@@ -200,7 +196,7 @@
 		</div>
 	</div>
 </div>
-</li></ul><ul class="list-unstyled"></ul><ul class="list-unstyled"></ul></section>
+</li></ul></div><div class="theme-purple"><ul class="list-unstyled"></ul></div><div class="theme-cyan"><ul class="list-unstyled"></ul></div></section>
 <section class="term-relationships"></section>
 <section class="related-terms"><h2 id="related" class="jumpable-heading"><span class="jumpable-heading-text">Related – 1</span> <a class="jumpable-heading-link" href="#related"><span aria-hidden="true">Jump to section</span></a></h2>
 
@@ -278,4 +274,5 @@
 	 
 
 	
+
 </body></html>

@@ -4,32 +4,14 @@
 		<meta name="description" content="Timur Tripp is a software enginner and graduate stuent based in Denver, Colorado.">
 		<meta name="keywords" content="software engineer,web developer,personal website,portfolio,project,projects,project showcase,11ty,website,template,website template,retro,vintage,80s,1980s,90s,1990s,dark mode">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
+		<link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="#0080ff">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/5.2.3/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=0.1.1">
 		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v=0.1.1"></script>
-		<style type="text/css">
-			:root {
-				--theme-color: var(--theme-portfolio-color);
-				--theme-light-color-alt: var(--theme-light-portfolio-color-alt);
-				--theme-dark-color-alt: var(--theme-dark-portfolio-color-alt);
-				--theme-fill: var(--theme-portfolio-fill);
-				--theme-color-alt: var(--theme-light-color-alt, --theme-light-default-color-alt);
-				--theme-color-contrasty: var(--theme-color, --theme-default-color);
-			}
-			.theme-mode-dark, .theme-mode-dark * {
-				--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-			}
-			@media (prefers-color-scheme: dark) {
-				.theme-mode-auto, .theme-mode-auto * {
-					--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-					--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				}
-			}
-		</style>
 	</head>
 	<body class="portfolio theme-mode-auto">
 		
@@ -52,9 +34,9 @@
 				</button>
 				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item opt opt-home">
+						<li class="nav-item opt opt-home theme-home">
 							<a class="nav-link" href="/">Home<div class="underbar"></div></a>
-						</li><li class="nav-item opt opt-portfolio">
+						</li><li class="nav-item opt opt-portfolio theme-portfolio">
 							<a class="nav-link" href="/portfolio">Portfolio<div class="underbar"></div></a>
 						</li>
 						<li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
@@ -83,7 +65,7 @@
 </header>
 	
 	
-		<main class="content tt-main">
+		<main class="content tt-main theme-portfolio">
     
 		
 			<div class="container page-intro-outer">
@@ -104,7 +86,7 @@
 
 
 <section class="hero"><h1><span class="h3"><span class="label collection-_index term-tags">Tag</span>:</span><div><div class="position-relative d-inline-block mx-auto"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path></svg></div></div></div></div><span class="label collection-tags term-php">PHP</span></h1><div><div class="descriptor"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-_tagCategories term-programming-language"><div class="my-2"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"></path></svg></div></div></div><div><h3><a class="label collection-_tagCategories term-programming-language item-underline" href="/portfolio/tags/categories/programming-language/">Programming Language</a></h3><div></div></div></div></div></div></section>
-<section class="item-relationships"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 1</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+<section class="item-relationships"><div class="theme-brown"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 1</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--tb">
@@ -113,6 +95,13 @@
 		<div class="item-header compact-content">
 			
 			<h3 class="item-name">[TB] Mods</h3>
+			
+			<ul class="list-unstyled item-attributes">
+			
+			<li class="item-date my-1"><span>January 2017 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> May 2018</span></li>
+			
+			</ul>
+			
 			
 		</div>
 		<div class="item-body">
@@ -142,7 +131,7 @@
 		</div>
 	</div>
 </div>
-</li></ul><h2 id="education" class="jumpable-heading"><span class="jumpable-heading-text">Education – 1</span> <a class="jumpable-heading-link" href="#education"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+</li></ul></div><div class="theme-purple"><h2 id="education" class="jumpable-heading"><span class="jumpable-heading-text">Education – 1</span> <a class="jumpable-heading-link" href="#education"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--web-development-certificate">
@@ -152,6 +141,13 @@
 			
 
 			<h3 class="item-name">Certificate of Proficiency, Web Development</h3>
+			
+			<ul class="list-unstyled item-attributes">
+			
+			<li class="item-date my-1"><span>December 2019</span></li>
+			
+			</ul>
+			
 			
 <div class="content-block compact-content summary nested-summary d-flex gap-2 my-2 flex-row collection-institutions term-slcc"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="Salt Lake Community College" src="https://assets.timurtripp.com/portfolio/SLCC.png"></div></div></div><div><h4><a class="label collection-institutions term-slcc item-underline" href="/portfolio/institutions/slcc/">Salt Lake Community College</a></h4><div class="nested-content"><div class="descriptor d-inline"><span class="label collection-_locations term-taylorsville">Taylorsville</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-utah">Utah</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-united-states">United States</span></div></div></div></div>
 
@@ -185,7 +181,7 @@
 		</div>
 	</div>
 </div>
-</li></ul><h2 id="work" class="jumpable-heading"><span class="jumpable-heading-text">Work Experience – 2</span> <a class="jumpable-heading-link" href="#work"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+</li></ul></div><div class="theme-cyan"><h2 id="work" class="jumpable-heading"><span class="jumpable-heading-text">Work Experience – 2</span> <a class="jumpable-heading-link" href="#work"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--cu-boulder-software-engineer">
@@ -196,7 +192,20 @@
 
 			<h3 class="item-name">Software Enginner</h3>
 			
-<span class="d-block">Strategic Relations</span>
+<span class="h4">Strategic Relations</span>
+
+			<ul class="list-unstyled item-attributes">
+			
+<li class="my-1"><span>Full time</span></li>
+
+
+			<li class="item-date my-1"><span>June 2022 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> present</span></li>
+			
+
+			</ul>
+			
+
+			
 <div class="content-block compact-content summary nested-summary d-flex gap-2 my-2 flex-row collection-institutions term-cu-boulder"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div></div><div><h4><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h4><div class="nested-content"><div class="descriptor d-inline"><span class="label collection-_locations term-boulder">Boulder</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-colorado">Colorado</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-united-states">United States</span></div></div></div></div>
 
 		</div>
@@ -250,7 +259,20 @@
 
 			<h3 class="item-name">Tutor</h3>
 			
-<span class="d-block">Computer Science and Information Systems</span>
+<span class="h4">Computer Science and Information Systems</span>
+
+			<ul class="list-unstyled item-attributes">
+			
+
+<li class="my-1"><span>Part time</span></li>
+
+			<li class="item-date my-1"><span>February 2022 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> May 2022</span></li>
+			
+
+			</ul>
+			
+
+			
 <div class="content-block compact-content summary nested-summary d-flex gap-2 my-2 flex-row collection-institutions term-slcc"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="Salt Lake Community College" src="https://assets.timurtripp.com/portfolio/SLCC.png"></div></div></div><div><h4><a class="label collection-institutions term-slcc item-underline" href="/portfolio/institutions/slcc/">Salt Lake Community College</a></h4><div class="nested-content"><div class="descriptor d-inline"><span class="label collection-_locations term-taylorsville">Taylorsville</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-utah">Utah</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-united-states">United States</span></div></div></div></div>
 
 		</div>
@@ -277,7 +299,7 @@
 		</div>
 	</div>
 </div>
-</li></ul></section>
+</li></ul></div></section>
 <section class="term-relationships"></section>
 <section class="related-terms"><h2 id="related" class="jumpable-heading"><span class="jumpable-heading-text">Related – 2</span> <a class="jumpable-heading-link" href="#related"><span aria-hidden="true">Jump to section</span></a></h2>
 
@@ -357,4 +379,5 @@
 	 
 
 	
+
 </body></html>

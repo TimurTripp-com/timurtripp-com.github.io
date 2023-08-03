@@ -4,32 +4,14 @@
 		<meta name="description" content="Timur Tripp is a software enginner and graduate stuent based in Denver, Colorado.">
 		<meta name="keywords" content="software engineer,web developer,personal website,portfolio,project,projects,project showcase,11ty,website,template,website template,retro,vintage,80s,1980s,90s,1990s,dark mode">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
+		<link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="#0080ff">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/5.2.3/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
 		<link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=0.1.1">
 		<script type="text/javascript" src="/assets/theme/bootstrap/5.2.3/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/assets/theme/scripts.js?v=0.1.1"></script>
-		<style type="text/css">
-			:root {
-				--theme-color: var(--theme-portfolio-color);
-				--theme-light-color-alt: var(--theme-light-portfolio-color-alt);
-				--theme-dark-color-alt: var(--theme-dark-portfolio-color-alt);
-				--theme-fill: var(--theme-portfolio-fill);
-				--theme-color-alt: var(--theme-light-color-alt, --theme-light-default-color-alt);
-				--theme-color-contrasty: var(--theme-color, --theme-default-color);
-			}
-			.theme-mode-dark, .theme-mode-dark * {
-				--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-			}
-			@media (prefers-color-scheme: dark) {
-				.theme-mode-auto, .theme-mode-auto * {
-					--theme-color-alt: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-					--theme-color-contrasty: var(--theme-dark-color-alt, --theme-dark-default-color-alt);
-				}
-			}
-		</style>
 	</head>
 	<body class="portfolio theme-mode-auto">
 		
@@ -52,9 +34,9 @@
 				</button>
 				<div class="p-0 container collapse navbar-collapse" id="navMenu">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item opt opt-home">
+						<li class="nav-item opt opt-home theme-home">
 							<a class="nav-link" href="/">Home<div class="underbar"></div></a>
-						</li><li class="nav-item opt opt-portfolio">
+						</li><li class="nav-item opt opt-portfolio theme-portfolio">
 							<a class="nav-link" href="/portfolio">Portfolio<div class="underbar"></div></a>
 						</li>
 						<li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
@@ -83,7 +65,7 @@
 </header>
 	
 	
-		<main class="content tt-main">
+		<main class="content tt-main theme-portfolio">
     
 		
 			<div class="container page-intro-outer">
@@ -104,7 +86,7 @@
 
 
 <section class="hero"><h1><span class="h3"><span class="label collection-_index term-tags">Tag</span>:</span><div><div class="position-relative d-inline-block mx-auto"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg></div></div></div></div><span class="label collection-tags term-git">Git</span></h1><div><div class="descriptor"><div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-_tagCategories term-technical-skill"><div class="my-2"><div class="icon-container"><div class="icon icon-monochrome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"></path></svg></div></div></div><div><h3><a class="label collection-_tagCategories term-technical-skill item-underline" href="/portfolio/tags/categories/technical-skill/">Technical Skill</a></h3><div></div></div></div></div></div></section>
-<section class="item-relationships"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 1</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+<section class="item-relationships"><div class="theme-brown"><h2 id="projects" class="jumpable-heading"><span class="jumpable-heading-text">Projects – 1</span> <a class="jumpable-heading-link" href="#projects"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--iiod.io">
@@ -113,6 +95,13 @@
 		<div class="item-header compact-content">
 			
 			<h3 class="item-name">iiod.io</h3>
+			
+			<ul class="list-unstyled item-attributes">
+			
+			<li class="item-date my-1"><span>January 2018 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> present</span></li>
+			
+			</ul>
+			
 			
 		</div>
 		<div class="item-body">
@@ -162,7 +151,7 @@
 		</div>
 	</div>
 </div>
-</li></ul><ul class="list-unstyled"></ul><h2 id="work" class="jumpable-heading"><span class="jumpable-heading-text">Work Experience – 1</span> <a class="jumpable-heading-link" href="#work"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
+</li></ul></div><div class="theme-purple"><ul class="list-unstyled"></ul></div><div class="theme-cyan"><h2 id="work" class="jumpable-heading"><span class="jumpable-heading-text">Work Experience – 1</span> <a class="jumpable-heading-link" href="#work"><span aria-hidden="true">Jump to section</span></a></h2><ul class="list-unstyled"><li class="section-block">
 
 
 <div class="summary d-sm-flex gap-4 flex-row item- item--cu-boulder-software-engineer">
@@ -173,7 +162,20 @@
 
 			<h3 class="item-name">Software Enginner</h3>
 			
-<span class="d-block">Strategic Relations</span>
+<span class="h4">Strategic Relations</span>
+
+			<ul class="list-unstyled item-attributes">
+			
+<li class="my-1"><span>Full time</span></li>
+
+
+			<li class="item-date my-1"><span>June 2022 <span class="theme-color-text" aria-label="to"><span class="triangle-left"></span></span> present</span></li>
+			
+
+			</ul>
+			
+
+			
 <div class="content-block compact-content summary nested-summary d-flex gap-2 my-2 flex-row collection-institutions term-cu-boulder"><div class="my-2"><div class="icon-container"><div class="icon icon-framed"><img alt="University of Colorado Boulder" src="https://assets.timurtripp.com/portfolio/CU.svg"></div></div></div><div><h4><a class="label collection-institutions term-cu-boulder item-underline" href="/portfolio/institutions/cu-boulder/">University of Colorado Boulder</a></h4><div class="nested-content"><div class="descriptor d-inline"><span class="label collection-_locations term-boulder">Boulder</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-colorado">Colorado</span></div><div class="descriptor d-inline">, <span class="label collection-_locations term-united-states">United States</span></div></div></div></div>
 
 		</div>
@@ -216,7 +218,7 @@
 		</div>
 	</div>
 </div>
-</li></ul></section>
+</li></ul></div></section>
 <section class="term-relationships"></section>
 <section class="related-terms"><h2 id="related" class="jumpable-heading"><span class="jumpable-heading-text">Related – 2</span> <a class="jumpable-heading-link" href="#related"><span aria-hidden="true">Jump to section</span></a></h2>
 
@@ -296,4 +298,5 @@
 	 
 
 	
+
 </body></html>
