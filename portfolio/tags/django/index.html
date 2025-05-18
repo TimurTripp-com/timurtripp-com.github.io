@@ -2,17 +2,17 @@
   
     <title>Tag: Django | TimurTripp.com</title>
     <meta name="author" content="Timur Tripp">
-    <meta name="description" content="Timur Tripp is a full stack software engineer and graduate student based in Denver, Colorado, USA.">
-    <meta name="keywords" content="software engineer,web developer,personal website,portfolio,project,projects,project showcase,11ty,website,template,website template,retro,vintage,80s,1980s,90s,1990s,dark mode">
+    <meta name="description" content="Timur Tripp is a full stack software engineer based in the western US.">
+    <meta name="keywords" content="software engineer,application developer,web developer,personal website,portfolio,project,projects,project showcase,drupal,11ty,website,template,website template,retro,vintage,80s,1980s,90s,1990s,dark mode">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="/assets/favicon-32x32.png" sizes="32x32">
     <link rel="mask-icon" type="image/svg+xml" href="/assets/mask-icon.svg" color="">
   
-  <link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/5.3.3/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/theme/bootstrap/5.3.6/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/assets/theme/fonts/eb-garamond-400-400i-700-700i-powerr-400-700-900-cmu-400-400i-700-700i.css">
   <link rel="stylesheet" type="text/css" href="/assets/theme/syntax/prism-coldark-default.css" id="syntaxCSS">
-  <link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=1.0">
-  <script type="text/javascript" src="/assets/theme/bootstrap/5.3.3/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/theme/styles.css?v=2">
+  <script type="text/javascript" src="/assets/theme/bootstrap/5.3.6/bootstrap.min.js"></script>
   <script type="text/javascript" src="/assets/theme/scripts.js?v=1.0"></script>
 </head>
   <body class="theme-mode-dark">
@@ -28,34 +28,30 @@
         </a>
       </div>
       <div class="float-right">
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-        </button>
-        <div class="p-0 container collapse navbar-collapse" id="navMenu">
+        <div class="p-0" id="navMenu">
           <ul class="navbar-nav ml-auto">
             
               <li class="nav-item opt opt-root theme-root">
-                <a class="d-inline-block nav-link no-underline py-1" href="/"><span class="underline">Home</span></a>
+                <a class="d-inline-block nav-link no-underline py-1" href="/">
+                  <span aria-hidden="true" class="triangle-right active-indicator"></span> 
+                  <span class="underline">Home</span>
+                </a>
               </li>
             
               <li class="nav-item opt opt-portfolio theme-portfolio">
-                <a class="d-inline-block nav-link no-underline py-1" href="/portfolio/"><span class="underline">Portfolio</span></a>
+                <a class="d-inline-block nav-link no-underline py-1 active" href="/portfolio/">
+                  <span aria-hidden="true" class="triangle-right active-indicator"></span> 
+                  <span class="underline">Portfolio</span>
+                </a>
               </li>
             
-            <li class="nav-item"><button class="theme-mode-toggle-container" onclick="toggleThemeMode()">
-  <div class="theme-mode-toggle">
-    <div class="theme-mode-toggle-circle-inner">
-      <div class="theme-mode-toggle-inner-left">
-        <div class="theme-mode-toggle-line theme-mode-toggle-line-1"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-2"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-3"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-4"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-5"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-6"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-7"></div>
-      </div><div class="theme-mode-toggle-inner-right">
-        <div class="theme-mode-toggle-line theme-mode-toggle-line-1"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-2"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-3"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-4"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-5"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-6"></div><div class="theme-mode-toggle-line theme-mode-toggle-line-7"></div>
-      </div>
-    </div>
-  </div>
-</button>
-</li>
+              <li class="nav-item opt opt-archive theme-archive">
+                <a class="d-inline-block nav-link no-underline py-1" href="/archive/">
+                  <span aria-hidden="true" class="triangle-right active-indicator"></span> 
+                  <span class="underline">Archive</span>
+                </a>
+              </li>
+            
           </ul>
         </div>
       </div>
@@ -74,26 +70,52 @@
 
   
   
-  <div class="container block-breadcrumb">
-    <h2 class="visually-hidden">Parent pages</h2>
-    <ul>
-      
+  
+  
+    <div class="container block-breadcrumb">
+      <h4 class="visually-hidden">Parent pages</h4>
+      <ul>
+        
   
     
   
     
   
-  <li class="breadcrumb-depth-0"><a class="no-underline" href="/"><span aria-hidden="true" class="triangle-left"></span> <span class="underline">Home</span></a></li>
+  
+  
+    <li class="breadcrumb-depth-0">
+      <a class="no-underline" href="/">
+        <span aria-hidden="true" class="triangle-left"></span>
+        <span class="underline">Home</span>
+      </a>
+    </li>
+  
 
   
-  <li class="breadcrumb-depth-1"><a class="no-underline" href="/portfolio/"><span aria-hidden="true" class="triangle-left"></span> <span class="underline">Portfolio</span></a></li>
+  
+  
+    <li class="breadcrumb-depth-1">
+      <a class="no-underline" href="/portfolio/">
+        <span aria-hidden="true" class="triangle-left"></span>
+        <span class="underline">Portfolio</span>
+      </a>
+    </li>
+  
 
   
-  <li class="breadcrumb-depth-2"><a class="no-underline" href="/portfolio/tags/"><span aria-hidden="true" class="triangle-left"></span> <span class="underline">Tags</span></a></li>
+  
+  
+    <li class="breadcrumb-depth-2">
+      <a class="no-underline" href="/portfolio/tags/">
+        <span aria-hidden="true" class="triangle-left"></span>
+        <span class="underline">Tags</span>
+      </a>
+    </li>
+  
 
-      
-    </ul>
-  </div>
+      </ul>
+    </div>
+  
 
 
   
@@ -690,7 +712,7 @@
       <li class="section-block">
         
 
-<div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-tags term-11ty">
+<div class="content-block compact-content summary d-flex gap-2 my-2 flex-row collection-tags term-flask">
   
     <div class="my-2 theme-color-text enlarged-text">
       
@@ -706,8 +728,8 @@
 
 
   
-    <a class="label collection-tags term-11ty" href="/portfolio/tags/11ty/">
-      11ty
+    <a class="label collection-tags term-flask" href="/portfolio/tags/flask/">
+      Flask
     </a>
   
 
@@ -822,7 +844,7 @@
                 </li>
               
                 <li class="tt-footer-social tt-footer-social-gitlab">
-                  <a target="_blank" href="https://gitlab.silvercrater.dev/">
+                  <a target="_blank" href="https://gitlab.silvercrater.com/">
                     <span aria-hidden="true" class="text-like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M503.5 204.6L502.8 202.8L433.1 21.02C431.7 17.45 429.2 14.43 425.9 12.38C423.5 10.83 420.8 9.865 417.9 9.57C415 9.275 412.2 9.653 409.5 10.68C406.8 11.7 404.4 13.34 402.4 15.46C400.5 17.58 399.1 20.13 398.3 22.9L351.3 166.9H160.8L113.7 22.9C112.9 20.13 111.5 17.59 109.6 15.47C107.6 13.35 105.2 11.72 102.5 10.7C99.86 9.675 96.98 9.295 94.12 9.587C91.26 9.878 88.51 10.83 86.08 12.38C82.84 14.43 80.33 17.45 78.92 21.02L9.267 202.8L8.543 204.6C-1.484 230.8-2.72 259.6 5.023 286.6C12.77 313.5 29.07 337.3 51.47 354.2L51.74 354.4L52.33 354.8L158.3 434.3L210.9 474L242.9 498.2C246.6 500.1 251.2 502.5 255.9 502.5C260.6 502.5 265.2 500.1 268.9 498.2L300.9 474L353.5 434.3L460.2 354.4L460.5 354.1C482.9 337.2 499.2 313.5 506.1 286.6C514.7 259.6 513.5 230.8 503.5 204.6z"></path></svg></span>
                     <span class="visually-hidden">GitLab</span>
                   </a>
